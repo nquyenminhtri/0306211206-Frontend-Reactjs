@@ -1,13 +1,16 @@
 import { Component } from 'react';
 import './HeaderMenu.scss';
 import '@fortawesome/fontawesome-free-webfonts';
+import { Link } from 'react-router-dom';
+
 class HeaderMenu extends Component{
     render(){
+        
         return(
             <div className='headerMenu-container'>
                 <div className='content-left'>
                     <div className='logo'>
-                        <img src='/images/logo.webp'/>
+                        <Link to='/'><img src='/images/logo.webp'/></Link>
                     </div>
                 </div>
                 <div className='content-center'>
@@ -17,15 +20,7 @@ class HeaderMenu extends Component{
                             <a><span>SHOES</span>
                                 <i className="fas fa-caret-down"></i>  
                             </a>
-                            {/* <ul className='item-small'>
-                                        <li><a href='#'>VANS CLASSIC</a></li>
-                                        <li><a>VANS VAULT</a></li>
-                                        <li><a>VANS OLD SKOOL</a></li>
-                                        <li><a>VANS SLIP-ON</a></li>
-                                        <li><a>VANS AUTHENTIC</a></li>
-                                        <li><a>VANS SK8</a></li>
-                                        <li><a>VANS </a></li>
-                                    </ul> */}
+                            
                         </li>
                         <li className='nav-item'><a><span>NEW ARRIVALS</span></a></li>
                         <li className='nav-item'><a><span>ACCESSORIES</span><i className="fas fa-caret-down"></i></a></li>
@@ -43,7 +38,7 @@ class HeaderMenu extends Component{
                             </i>
                             
                         </div>
-                        <div className='cart-item child-item'><i className="fas fa-cart-plus"></i></div>
+                        <div className='cart-item child-item'><Link to='/cart'><i className="fas fa-cart-plus"></i></Link></div>
                     </div>
                 </div>
             </div>

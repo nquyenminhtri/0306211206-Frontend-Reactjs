@@ -4,7 +4,7 @@ class FooterUnder extends Component{
     render(){
         return(
             <div className="footer-under-container">
-                <div ><span>© Website design by <b>Nguyễn Minh Trí</b></span></div>
+                <div ><span><b>Nguyễn Minh Trí</b></span></div>
             </div>
         )
     }

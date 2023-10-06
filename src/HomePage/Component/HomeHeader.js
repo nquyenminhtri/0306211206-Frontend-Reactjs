@@ -10,6 +10,7 @@ class HomeHeader extends Component{
                 <ContactMenu/>
                 <HeaderMenu/>
                 <Banner/>
+                
             </div>
         )
     }
